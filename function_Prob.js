@@ -14,19 +14,18 @@
 
 let arr = [8, 9, 10, 1, 2, 3, 4, 5, 6, 7];
 let num = 5;
-function getElements(arr,num)
-{
+function getElements(arr, num) {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > num) {
             console.log(arr[i]);
         }
     }
-} 
+}
 getElements(arr, num);
 console.log(getElements);
 
 
-  
+
 
 
 // Qs2.Write a JavaScript function to extract unique characters from a string.Example:str=“abcdabcdefgggh” ans=“abcdefgh”
@@ -42,6 +41,7 @@ const uniqueChar = (str) => {
 
 let result = uniqueChar('abcdabcdefgggh')
 console.log(result);
+
 // Qs3.Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output.Example:country=["Australia","Germany","United States of America"]output:"United States of America"
 
 const countryName = (cName) => {
@@ -61,7 +61,6 @@ console.log(largeName);
 
 
 // Qs4.Write a JavaScript function to count the number of vowels in a String argument.
-
 const findVowel = (str) => {
     let count = 0;
     for (let i = 0; i <= str.length; i++) {
@@ -74,6 +73,7 @@ const findVowel = (str) => {
 let string = 'eastdeltauniversity'
 let checkVowel = findVowel(string)
 console.log('Total vowels are', checkVowel);
+
 // Qs5.Write a JavaScript function to generate a random number within a range (start,end).
 const randomNum = (start, end) => {
     let diff = start - end;
