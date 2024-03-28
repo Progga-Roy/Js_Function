@@ -116,3 +116,37 @@ const innerGreet=()=>{
 }
 console.log(greet);
 changeGreet()
+
+//Higher order function
+const multipleGreet =(func,n)=>{
+   for(let i = 0; i<=n; i++){
+        func()
+   }
+} 
+const greet1=()=>{
+    console.log( 'Higher order :hello');
+}
+multipleGreet(greet1, 1)
+
+
+const oddEvenTest =(request)=>{
+    if(request === 'odd'){
+        return function(n) {
+         console.log(!(n%2 ===0))
+         
+        }
+    }
+   else if(request === 'even'){
+        return function(n) {
+         console.log(n%2 ===0)
+         
+        }
+    }
+    else{
+        console.log('Wrong request');
+    }
+} 
+const oddTester = oddEvenTest('odd')
+oddTester(12)
+const evenTester = oddEvenTest('even')
+evenTester(12)
